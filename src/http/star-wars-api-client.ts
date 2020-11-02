@@ -36,6 +36,11 @@ class StarWarsApiClient extends HttpClient {
     getPlanetsPage = (pageUrl: string) => {
         return this.instance.get<PlanetsData>(pageUrl);
     };
+
+    getPlanets = () => {
+        const planetsRootUrl = `${StarWarsApiClient.PLANETS}/`;
+        return this.getPlanetsPage(planetsRootUrl);
+    };
 }
 
 export default StarWarsApiClient;
