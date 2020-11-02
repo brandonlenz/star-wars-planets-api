@@ -37,7 +37,7 @@ class Planet extends Component<PlanetProps> {
                 </td>
 
                 <td>
-                    {planet.residents}
+                    {planet.printNumberOfNotableResidents()}
                 </td>
 
                 <td>

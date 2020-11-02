@@ -42,6 +42,10 @@ class Planet {
         return Planet.parseList(this.climate).map(value => valueOrUnknown(value));
     }
 
+    printNumberOfNotableResidents(): number {
+        return this.residents.length;
+    }
+
     private static parseList(commaSeparatedList: string): Array<string> {
         return commaSeparatedList.split(',');
     };
