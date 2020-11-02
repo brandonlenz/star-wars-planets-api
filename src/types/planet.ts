@@ -22,3 +22,5 @@ class Planet {
         this.url = url;
     }
 }
+
+export default Planet;

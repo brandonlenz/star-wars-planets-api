@@ -37,3 +37,5 @@ class StarWarsApiClient extends HttpClient {
         return this.instance.get<PlanetsData>(pageUrl);
     };
 }
+
+export default StarWarsApiClient;
