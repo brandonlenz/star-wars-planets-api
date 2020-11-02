@@ -28,7 +28,7 @@ class Planet extends Component<PlanetProps> {
             <tr >
                 <td>
                     <a href={planet.url} target="_blank" rel="noopener noreferrer">
-                        {planet.name}
+                        {planet.printName()}
                     </a>
                 </td>
 
