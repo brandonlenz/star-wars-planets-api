@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="677b4f10-8028-4c15-a1f9-a2a7f0eff10d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="c593d166-4572-4ec2-b95c-c3d34ff23d2b" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j6h1gDcxWstnkfJpKVl50TIPLU" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/http" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="677b4f10-8028-4c15-a1f9-a2a7f0eff10d" name="Default Changelist" comment="" />
+      <created>1603130235850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603130235850</updated>
+      <workItem from="1603130238100" duration="51356000" />
+      <workItem from="1603465131288" duration="1845000" />
+      <workItem from="1603658328546" duration="253000" />
+      <workItem from="1604354502306" duration="223000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ignore IDE files">
+      <created>1603130412831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603130412831</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add axios and a test implementation for the swapi wrapper">
+      <created>1603133159072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603133159074</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Make non-JSK ts files '.ts' instead of '.tsx'">
+      <created>1603135774547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603135774547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MVP for getting planet data on the page">
+      <created>1603139205261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603139205261</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Since 'climate' is also multivalue, handle it similar to 'terrain'">
+      <created>1603139362510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603139362510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="DRY up list parsing">
+      <created>1603139738286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603139738286</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Clean up LINT">
+      <created>1603139811324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603139811324</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add unique key prop to appease warnings">
+      <created>1603140795407</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603140795407</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Calculate water surface area">
+      <created>1603142156898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603142156898</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update typing system to be more robust">
+      <created>1603163099940</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603163099941</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove console log">
+      <created>1603163295776</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603163295776</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Make protected">
+      <created>1603163307570</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603163307570</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add Planet URL and table styling">
+      <created>1603204375858</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603204375859</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update TODOs">
+      <created>1603204492562</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603204492562</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add and test loading indicator">
+      <created>1603205778809</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603205778809</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Make generic hook for SWApi">
+      <created>1603208967469</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603208967469</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add header">
+      <created>1603209079862</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603209079862</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Center planets table">
+      <created>1603209313145</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603209313145</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Handle unknown values for all columns">
+      <created>1603221225851</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603221225851</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Properly populate table data for all planets">
+      <created>1603221273712</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603221273712</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Remove console logs">
+      <created>1603221560339</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603221560339</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Tweak CSS">
+      <created>1603223845494</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603223845494</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Use custom hook again">
+      <created>1603224112298</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603224112298</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix indents">
+      <created>1603224137099</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603224137099</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add error handling for Api requests">
+      <created>1603225791462</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603225791462</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Sorted planets alphabetically">
+      <created>1603226214939</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603226214939</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Remove unused api method">
+      <created>1603227671787</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603227671787</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update README.md">
+      <created>1603232523618</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1603232523618</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Capitalize API">
+      <created>1603232539078</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1603232539078</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Since 'climate' is also multivalue, handle it similar to 'terrain'" />
+    <MESSAGE value="DRY up list parsing" />
+    <MESSAGE value="Clean up LINT" />
+    <MESSAGE value="Add unique key prop to appease warnings" />
+    <MESSAGE value="Calculate water surface area" />
+    <MESSAGE value="Update typing system to be more robust" />
+    <MESSAGE value="Remove console log" />
+    <MESSAGE value="Make protected" />
+    <MESSAGE value="Add Planet URL and table styling" />
+    <MESSAGE value="Update TODOs" />
+    <MESSAGE value="Add and test loading indicator" />
+    <MESSAGE value="Make generic hook for SWApi" />
+    <MESSAGE value="Add header" />
+    <MESSAGE value="Center planets table" />
+    <MESSAGE value="Handle unknown values for all columns" />
+    <MESSAGE value="Properly populate table data for all planets" />
+    <MESSAGE value="Remove console logs" />
+    <MESSAGE value="Tweak CSS" />
+    <MESSAGE value="Use custom hook again" />
+    <MESSAGE value="Fix indents" />
+    <MESSAGE value="Add error handling for Api requests" />
+    <MESSAGE value="Sorted planets alphabetically" />
+    <MESSAGE value="Remove unused api method" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Capitalize API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Capitalize API" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603146096422">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1603146096422" />
+    <state x="385" y="111" width="918" height="889" key="CommitChangelistDialog2" timestamp="1603232538994">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="385" y="111" width="918" height="889" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1603232538994" />
+    <state x="385" y="132" key="CommitChangelistDialog2/0.23.1680.1027/1680.-367.2560.1417@0.23.1680.1027" timestamp="1603135852822" />
+    <state x="532" y="280" width="615" height="490" key="find.popup" timestamp="1603465181681">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="532" y="280" width="615" height="490" key="find.popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1603465181681" />
+    <state x="505" y="232" width="670" height="692" key="search.everywhere.popup" timestamp="1603465138574">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="232" width="670" height="692" key="search.everywhere.popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1603465138574" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-367.2560.1417@0.23.1680.1027" timestamp="1603135011900" />
+  </component>
+</project>
