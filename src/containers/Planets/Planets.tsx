@@ -15,8 +15,8 @@ const Planets = () => {
 
     useEffect(() => {
         const planetsList: Array<PlanetType> = [];
-        api.getPlanets().then(response => {
-            planetsList.push(...convert(response.data.results));
+        api.getAllPlanets().then(allPlanets => {
+            planetsList.push(...convert(allPlanets));
             setPlanets(planetsList);
         });
     }, []);

@@ -37,9 +37,28 @@ class StarWarsApiClient extends HttpClient {
         return this.instance.get<PlanetsData>(pageUrl);
     };
 
-    getPlanets = () => {
+    getAllPlanets = () => {
+        const planetsData: Array<PlanetData> = [];
         const planetsRootUrl = `${StarWarsApiClient.PLANETS}/`;
-        return this.getPlanetsPage(planetsRootUrl);
+        return this.getPlanetsRecursive(planetsRootUrl, planetsData);
+    };
+
+    private getPlanetsRecursive = (pageUrl: string, planetsData: Array<PlanetData>) => {
+        return new Promise<Array<PlanetData>>(
+            (resolve, reject) => this.getPlanetsPage(pageUrl)
+                .then(response => {
+                    const { data } = response;
+                    planetsData.push(...data.results);
+                    if (data.next) {
+                        this.getPlanetsRecursive(data.next, planetsData)
+                            .then(resolve)
+                            .catch(reject);
+                    } else {
+                        resolve(planetsData);
+                    }
+                })
+                .catch(reject)
+        );
     };
 }
 
