@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
 
-const DEBUG: boolean = true; // TODO: application property and set to false by default
+const DEBUG: boolean = process.env.REACT_APP_DEBUG as any as boolean;
 
 abstract class HttpClient {
     protected readonly instance: AxiosInstance;
