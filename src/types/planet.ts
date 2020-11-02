@@ -37,6 +37,14 @@ class Planet {
     printName(): string {
         return valueOrUnknown(this.name);
     }
+
+    printClimates(): Array<string> {
+        return Planet.parseList(this.climate).map(value => valueOrUnknown(value));
+    }
+
+    private static parseList(commaSeparatedList: string): Array<string> {
+        return commaSeparatedList.split(',');
+    };
 }
 
 export default Planet;
