@@ -46,6 +46,10 @@ class Planet {
         return this.residents.length;
     }
 
+    printTerrains(): Array<string> {
+        return Planet.parseList(this.terrain).map(value => valueOrUnknown(value));
+    }
+
     private static parseList(commaSeparatedList: string): Array<string> {
         return commaSeparatedList.split(',');
     };

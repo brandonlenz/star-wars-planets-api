@@ -41,7 +41,7 @@ class Planet extends Component<PlanetProps> {
                 </td>
 
                 <td>
-                    {planet.terrain}
+                    {planet.printTerrains().map(terrain => <li key={terrain}>{terrain}</li>)}
                 </td>
 
                 <td>
