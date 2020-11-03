@@ -2,6 +2,8 @@ import React, { Component, FunctionComponent } from "react";
 
 import PlanetType from "../../types/planet";
 
+import classes from "./Planet.module.css";
+
 type PlanetProps = {
     planet: PlanetType
 }
@@ -26,29 +28,29 @@ class Planet extends Component<PlanetProps> {
 
         return (
             <tr >
-                <td>
+                <td className={classes.TextColumn}>
                     <a href={planet.url} target="_blank" rel="noopener noreferrer">
                         {planet.printName()}
                     </a>
                 </td>
 
-                <td>
+                <td className={classes.TextColumn}>
                     {planet.printClimates().map(climate => <li key={climate}>{climate}</li>)}
                 </td>
 
-                <td>
+                <td className={classes.NumericColumn}>
                     {planet.printNumberOfNotableResidents()}
                 </td>
 
-                <td>
+                <td className={classes.TextColumn}>
                     {planet.printTerrains().map(terrain => <li key={terrain}>{terrain}</li>)}
                 </td>
 
-                <td>
+                <td className={classes.NumericColumn}>
                     {planet.printPopulation()}
                 </td>
 
-                <td>
+                <td className={classes.NumericColumn}>
                     {planet.printWaterSurfaceArea()}
                 </td>
             </tr>

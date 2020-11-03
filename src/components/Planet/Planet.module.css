@@ -1,0 +1,11 @@
+.NumericColumn {
+    text-align: right;
+}
+
+.TextColumn {
+    text-align: left;
+}
+
+td {
+    white-space: nowrap;
+}
