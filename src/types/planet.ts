@@ -57,7 +57,10 @@ class Planet {
     printWaterSurfaceArea(): string {
         if (isUnknown(this.diameter) || isUnknown(this.surface_water)) return SpecialValue.Unknown;
 
-        const waterSurfaceArea = this.calculateSurfaceArea() * parseInt(this.surface_water) / 100; //TODO: This could crash if surface_water is malformed
+        const surfaceWater = parseInt(this.surface_water);
+        if (isNaN(surfaceWater)) return SpecialValue.Unknown;
+
+        const waterSurfaceArea = this.calculateSurfaceArea() * surfaceWater / 100;
         return Planet.formatNumeric(Math.ceil(waterSurfaceArea).toString());
     }
 
