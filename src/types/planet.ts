@@ -50,9 +50,19 @@ class Planet {
         return Planet.parseList(this.terrain).map(value => valueOrUnknown(value));
     }
 
+    printPopulation(): string | SpecialValue.Unknown {
+        return this.population === "unknown" ? SpecialValue.Unknown : Planet.formatNumeric(this.population);
+    }
+
     private static parseList(commaSeparatedList: string): Array<string> {
         return commaSeparatedList.split(',');
     };
+
+    private static formatNumeric(numericValue: string): string {
+        //TODO: Format number with spaces in "commas" place
+
+        return numericValue;
+    }
 }
 
 export default Planet;
