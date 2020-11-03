@@ -4,6 +4,8 @@ import Planet from "../../components/Planet/Planet";
 import PlanetType from "../../types/planet"
 import StarWarsApiClient, { PlanetData } from "../../http/star-wars-api-client";
 
+import classes from "./Planets.module.css";
+
 const api = new StarWarsApiClient();
 
 const convert = (results: Array<PlanetData>) => {
@@ -22,7 +24,7 @@ const Planets = () => {
     }, []);
 
     return (
-        <table>
+        <table className={classes.PlanetTable}>
             <thead>
                 <Planet.Header />
             </thead>
