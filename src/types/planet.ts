@@ -60,7 +60,10 @@ class Planet {
         const surfaceWater = parseInt(this.surface_water);
         if (isNaN(surfaceWater)) return SpecialValue.Unknown;
 
-        const waterSurfaceArea = this.calculateSurfaceArea() * surfaceWater / 100;
+        const surfaceArea = this.calculateSurfaceArea();
+        if (isNaN(surfaceArea)) return SpecialValue.Unknown;
+
+        const waterSurfaceArea = surfaceArea * surfaceWater / 100;
         return Planet.formatNumeric(Math.ceil(waterSurfaceArea).toString());
     }
 
@@ -77,7 +80,7 @@ class Planet {
     }
 
     private calculateSurfaceArea(): number {
-        const diameter = parseInt(this.diameter); //TODO: This could crash if diameter is not a number.
+        const diameter = parseInt(this.diameter);
         return 4 * Math.PI * Math.pow(diameter / 2, 2);
     }
 }
