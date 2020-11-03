@@ -66,7 +66,9 @@ class Planet {
     };
 
     private static formatNumeric(numericValue: string): string {
-        //TODO: Format number with spaces in "commas" place
+        if (numericValue.length > 3) {
+            return numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
 
         return numericValue;
     }
