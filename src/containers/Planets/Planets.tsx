@@ -38,7 +38,7 @@ const Planets = () => {
                             <Planet.Header />
                         </thead>
                         <tbody>
-                            {planets.map(planet => <Planet key={planet.name} planet={planet} />) /* TODO: Sort Alphabetically */}
+                            {planets.map(planet => <Planet key={planet.name} planet={planet} />)}
                         </tbody>
                     </table>
     );
