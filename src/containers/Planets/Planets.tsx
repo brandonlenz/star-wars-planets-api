@@ -27,14 +27,21 @@ const Planets = () => {
     }, [response]);
 
     return (
-        <table className={classes.PlanetTable}>
-            <thead>
-                <Planet.Header />
-            </thead>
-            <tbody>
-                {planets.map(planet => <Planet key={planet.name} planet={planet} />) /* TODO: Sort Alphabetically */}
-            </tbody>
-        </table>
+        loading
+            ?   <div>loading planet data...</div>
+            :   error
+                ?   <>
+                        <div>An error has occurred!</div>
+                        <div>{error.name}: {error.message}</div>
+                    </>
+                :   <table className={classes.PlanetTable}>
+                        <thead>
+                            <Planet.Header />
+                        </thead>
+                        <tbody>
+                            {planets.map(planet => <Planet key={planet.name} planet={planet} />) /* TODO: Sort Alphabetically */}
+                        </tbody>
+                    </table>
     );
 };
 
