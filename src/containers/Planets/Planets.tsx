@@ -14,7 +14,6 @@ const convert = (results: Array<PlanetData>) => {
 
 const Planets = () => {
     const [planets, setPlanets] = useState<Array<PlanetType>>([]);
-
     const [response, loading, error] = useApi(api.getAllPlanets);
 
     useEffect(() => {
