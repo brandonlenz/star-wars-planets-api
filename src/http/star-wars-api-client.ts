@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import HttpClient from "./http-client"
 
 export interface PlanetData {
@@ -60,6 +62,25 @@ class StarWarsApiClient extends HttpClient {
                 .catch(reject)
         );
     };
+}
+
+export function useApi<T>(apiCall: (() => Promise<T>)): [T | null, boolean, Error | null] {
+    const [response, setResponse] = useState<T | null>(null);
+    const [loading, setLoading] = useState<boolean>(false);
+    const [error, setError] = useState<Error | null>(null);
+
+    useEffect(() => {
+        setLoading(true);
+        apiCall().then(apiResponse => {
+            setResponse(apiResponse);
+            setLoading(false);
+        }).catch(error => {
+            setError(error);
+            setLoading(false);
+        });
+    }, [apiCall]);
+
+    return [response, loading, error];
 }
 
 export default StarWarsApiClient;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Planet from "../../components/Planet/Planet";
 import PlanetType from "../../types/planet"
-import StarWarsApiClient, { PlanetData } from "../../http/star-wars-api-client";
+import StarWarsApiClient, { PlanetData, useApi } from "../../http/star-wars-api-client";
 
 import classes from "./Planets.module.css";
 
@@ -15,13 +15,16 @@ const convert = (results: Array<PlanetData>) => {
 const Planets = () => {
     const [planets, setPlanets] = useState<Array<PlanetType>>([]);
 
+    const [response, loading, error] = useApi(api.getAllPlanets);
+
     useEffect(() => {
         const planetsList: Array<PlanetType> = [];
-        api.getAllPlanets().then(allPlanets => {
-            planetsList.push(...convert(allPlanets));
+        if (response) {
+            planetsList.push(...convert(response));
+            planetsList.sort((p1, p2) => p1.name.localeCompare(p2.name));
             setPlanets(planetsList);
-        });
-    }, []);
+        }
+    }, [response]);
 
     return (
         <table className={classes.PlanetTable}>
