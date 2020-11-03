@@ -49,7 +49,7 @@ class Planet extends Component<PlanetProps> {
                 </td>
 
                 <td>
-                    {planet.surface_water}
+                    {planet.printWaterSurfaceArea()}
                 </td>
             </tr>
         );

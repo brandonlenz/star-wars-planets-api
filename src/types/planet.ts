@@ -54,6 +54,13 @@ class Planet {
         return this.population === "unknown" ? SpecialValue.Unknown : Planet.formatNumeric(this.population);
     }
 
+    printWaterSurfaceArea(): string {
+        if (isUnknown(this.diameter) || isUnknown(this.surface_water)) return SpecialValue.Unknown;
+
+        const waterSurfaceArea = this.calculateSurfaceArea() * parseInt(this.surface_water) / 100; //TODO: This could crash if surface_water is malformed
+        return Planet.formatNumeric(Math.ceil(waterSurfaceArea).toString());
+    }
+
     private static parseList(commaSeparatedList: string): Array<string> {
         return commaSeparatedList.split(',');
     };
@@ -62,6 +69,11 @@ class Planet {
         //TODO: Format number with spaces in "commas" place
 
         return numericValue;
+    }
+
+    private calculateSurfaceArea(): number {
+        const diameter = parseInt(this.diameter); //TODO: This could crash if diameter is not a number.
+        return 4 * Math.PI * Math.pow(diameter / 2, 2);
     }
 }
 
